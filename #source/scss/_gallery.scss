@@ -1,0 +1,176 @@
+.gallerypage {
+    padding: 130px 0 175px;
+}
+
+.gallerypage__title {
+    margin-bottom: 39px;
+    text-align: center;
+    padding: 0 20px;
+
+    h1 {
+        color: #FFF;
+        font-family: 'Playfair Display SC', serif;
+        font-size: 50px;
+        font-style: normal;
+        line-height: normal;
+    }
+}
+
+.gallerypage__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 31px;
+}
+
+.gallerypage__item {
+    width: calc(25% - 24px);
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 331px;
+    height: 21vw;
+
+    a {
+        display: block;
+        position: relative;
+    }
+
+    span {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.70);
+        color: #FFF;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .4s;
+        z-index: -1;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &:hover {
+        span {
+            z-index: 1;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        img {
+            transform: scale(1.08);
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .4s;
+    }
+}
+
+.fancybox__button--close {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    top: 40px;
+    right: 50px;
+    position: absolute;
+    transition: .3s;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, .1);
+    }
+}
+
+.fancybox__thumbs,
+.fancybox__button--thumbs,
+.fancybox__button--fullscreen,
+.fancybox__button--slideshow,
+.fancybox__button--zoom,
+.fancybox__toolbar__items--left {
+    display: none;
+}
+
+.fancybox__caption {
+    padding: 30px 10px 10px;
+
+    h3 {
+        font-family: 'Playfair Display SC', serif;
+        color: #FFF;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 18px;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.70);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%;
+    }
+}
+
+
+//  ---------- ADAPTIVE ----------- //
+
+@media (max-width: 1199.8px) {
+    .gallerypage__inner {
+        gap: 20px;
+    }
+
+    .gallerypage__item {
+        width: calc(25% - 15px);
+    }
+}
+
+@media (max-width: 991.8px) {
+    .gallerypage__item {
+        width: calc(33% - 12px);
+        height: 29vw;
+    }
+    .gallerypage {
+        padding: 120px 0 100px;
+    }
+
+    .gallerypage__title {
+        margin-bottom: 25px;
+
+        h1 {
+            font-size: 38px;
+        }
+    }
+}
+
+@media (max-width: 767.8px) {
+    .gallerypage__title h1 {
+        font-size: 32px;
+    }
+    .gallerypage__item {
+        width: calc(50% - 10px);
+        height: 35vw;
+    }
+    .gallerypage {
+        padding: 110px 0 80px;
+    }
+}
+
+@media (max-width: 575.8px) {
+    .gallerypage__item {
+        width: 100%;
+        height: 90vw;
+    }
+}

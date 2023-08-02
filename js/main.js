@@ -21,4 +21,12 @@ $(document).ready(function () {
     });
 
 
+    // animate libriary
+    AOS.init({
+        duration: 500,
+        easing: 'ease-in-sine'
+    });
+
+
+
 });
