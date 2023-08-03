@@ -10,7 +10,7 @@ $(document).ready(function () {
         }
     });
 
-    // burger ---------- //
+    // burger -------------------------------------------- //
     var burger = document.querySelector(".burger2");
     document.querySelector(".header__burger").addEventListener("click", function () {
         return burger.classList.toggle("on");
@@ -21,10 +21,11 @@ $(document).ready(function () {
     });
 
 
-    // animate libriary
+    // animate library initialization ------------------- //
     AOS.init({
         duration: 500,
-        easing: 'ease-in-sine'
+        easing: 'ease-in-sine',
+        once: true
     });
 
 

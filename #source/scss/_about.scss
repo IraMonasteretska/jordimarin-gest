@@ -1,0 +1,143 @@
+.aboutpage {
+    padding: 198px 0 100px;
+}
+
+.aboutpage__inner {
+    display: flex;
+    gap: 65px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.aboutpage__inner-left {
+    width: 40%;
+
+    img {
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+.aboutpage__mobile-title h2{
+    display: none;
+}
+
+.aboutpage__inner-right {
+    width: 55%;
+
+    h1 {
+        color: #FFF;
+        font-family: 'Playfair Display SC', serif;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 60px;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 18px;
+        font-style: normal;
+        line-height: 170%;
+        margin-bottom: 20px;
+    }
+
+    span {
+        margin-top: 60px;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 18px;
+        font-style: normal;
+        display: block;
+        line-height: 170%;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 51px;
+            height: 1px;
+            margin-right: 18px;
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+    }
+}
+
+.aboutpage__inner-content {
+    p,
+    li {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 18px;
+        font-style: normal;
+        line-height: 170%;
+        margin-bottom: 20px;
+    }
+}
+
+//  --------------- ADAPTIVE -------------- //
+
+@media(max-width:1399.8px) {
+    .aboutpage__inner {
+        gap: 40px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .aboutpage {
+        padding: 150px 0 100px;
+    }
+
+    .aboutpage__inner-right {
+        width: 100%;
+        margin-bottom: 20px;
+        h1{
+            display: none;
+        }
+    }
+    .aboutpage__inner-left {
+        text-align: center;
+        width: 100%;
+        img {
+            max-width: 550px;
+        }
+    }
+
+    .aboutpage__mobile-title h2{
+        display: block;
+        color: #FFF;
+        font-family: 'Playfair Display SC', serif;
+        font-size: 50px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media(max-width:767.8px) {
+    .aboutpage {
+        padding: 130px 0 100px;
+    }
+    .aboutpage__inner-right p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .aboutpage__inner-content {
+        p,
+        li {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+    }
+    .aboutpage__inner-right span {
+        margin-top: 30px;
+    }
+
+    .aboutpage__mobile-title h2{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+}
