@@ -2,3 +2,13 @@
 
 // font-family: 'Playfair Display', serif;
 // font-family: 'Playfair Display SC', serif;
+
+
+@font-face {
+    font-family: 'MescalitoStarfish';
+    src: url('../fonts/MescalitoStarfish-Regular.otf');
+    src: url('../fonts/MescalitoStarfish-Regular.woff') format('woff'),
+         url('../fonts/MescalitoStarfish-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
