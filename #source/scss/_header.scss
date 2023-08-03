@@ -140,7 +140,6 @@ button.burger {
 
 .header__menu {
 
-
     .menu {
         display: flex;
         align-items: center;
@@ -183,6 +182,12 @@ button.burger {
 
 
 @media(max-width:991.8px) {
+    .header__menu .menu {
+        flex-direction: column;
+    }
+    .header__menu .menu li+li {
+        margin-left: 0;
+    }
     .header__menu {
         position: fixed;
         display: flex;
@@ -278,11 +283,14 @@ button.burger {
                 &:nth-child(4) {
                     transition: .8s 1s;
                 }
+                &:nth-child(5) {
+                    transition: .8s 1.2s;
+                }
             }
 
             .socials {
                 opacity: 1;
-                transition: .8s 1.2s;
+                transition: .8s 1.4s;
             }
         }
     }
