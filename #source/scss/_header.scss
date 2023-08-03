@@ -18,12 +18,15 @@
     justify-content: space-between;
 }
 
-.header__logo a {
-    display: block;
-
-    img {
-        height: 30px;
-        background-size: cover;
+.header__logo {
+    position: relative;
+    z-index: 99;
+    a {
+        display: block;
+        img {
+            height: 30px;
+            background-size: cover;
+        }
     }
 }
 
