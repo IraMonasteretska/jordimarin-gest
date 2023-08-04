@@ -269,11 +269,13 @@
     color: #FFF;
     font-size: 18px;
     font-style: normal;
+    font-family: 'Playfair Display', serif;
     font-weight: 600;
     line-height: 170%;
     outline: none;
     background: transparent;
     transition: .3s;
+    cursor: pointer;
 
     &:hover {
         transform: translateY(-8px);
