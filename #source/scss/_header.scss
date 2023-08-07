@@ -10,6 +10,13 @@
     &.change-bg {
         background-color: rgba(0, 0, 0, .9);
     }
+    &.short-logo .header__logo {
+        a {
+            img {
+                height: 25px;
+            }
+        }
+    }
 }
 
 .header__inner {

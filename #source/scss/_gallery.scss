@@ -10,7 +10,7 @@
     h1 {
         color: #FFF;
         font-family: 'Playfair Display SC', serif;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 400;
         font-style: normal;
         line-height: normal;
@@ -95,7 +95,7 @@
     }
 }
 
-.fancybox__container {
+.fancybox__toolbar {
     &:after {
         content: '';
         position: absolute;
@@ -234,7 +234,7 @@
         top: 25px;
     }
     .gallerypage__title h1 {
-        font-size: 32px;
+        font-size: 36px;
     }
 
     .gallerypage__item {
@@ -248,6 +248,9 @@
 }
 
 @media (max-width: 575.8px) {
+    .gallerypage__title h1 {
+        font-size: 30px;
+    }
 
     .is-compact .fancybox__footer {
         position: relative;
