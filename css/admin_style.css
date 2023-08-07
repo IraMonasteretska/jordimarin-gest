@@ -1,0 +1,61 @@
+
+.wpcf7-not-valid-tip {
+    width: 200px;
+    top: 45px;
+    left: 0;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    border: none;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+    color: #ffb900;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    color: #46b450;
+}
+
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+    color: #dc3232;
+}
+
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output,
+.wpcf7 form.sent .wpcf7-response-output,
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pagecontent {
+    padding: 50px;
+}
+
+.pagecontent__button a {
+    margin: 40px 0 0;
+    width: 150px;
+    height: 50px;
+}
+
+.hidefield {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.promotion .promotionslider .slick-dots {
+    display: none!important;
+}
+.promotion.serv .promotionslider .slick-dots {
+    display: block!important;
+}
