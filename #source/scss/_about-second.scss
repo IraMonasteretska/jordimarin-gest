@@ -1,0 +1,249 @@
+// about-hero section -------------------------- //
+.about-hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    position: relative;
+    display: flex;
+
+    >img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.about-hero__content {
+    padding-top: 30vh;
+    max-width: 580px;
+    padding-left: 30px;
+
+    h1 {
+        color: #FFF;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    p {
+        color: #FFF;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 153%
+    }
+}
+
+// about-blockquote section -------------------------- //
+.about-blockquote {
+    position: relative;
+    padding: 130px 0;
+
+    >img {
+        position: absolute;
+        object-fit: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.blockquote {
+    max-width: 1050px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 100px;
+    position: relative;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: 65px;
+        height: 50px;
+        background-size: cover;
+    }
+
+    &:before {
+        background-image: url(../img/svg/brecket-left.svg);
+        top: -20px;
+        left: 0;
+    }
+
+    &:after {
+        background-image: url(../img/svg/brecket-right.svg);
+        bottom: 60px;
+        right: 0;
+    }
+
+    p {
+        color: #FFF;
+        text-align: center;
+        font-size: 36px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 40px;
+    }
+
+    span {
+        color: #FFF;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: block;
+    }
+}
+
+// about-gallery section ------------------------- //
+
+.about-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-gallery__item {
+    height: 100%;
+    width: 25%;
+    height: 520px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+//  --------------- ADAPTIVE -------------- //
+
+@media(max-width:1599.8px) {
+    .about-gallery__item {
+        height: 426px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .about-hero__content h1 {
+        font-size: 42px;
+    }
+
+    .about-hero__content p {
+        font-size: 18px;
+    }
+
+    .about-hero__content {
+        padding-top: 25vh;
+        padding-left: 20px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .about-gallery__item {
+        width: 50%;
+    }
+
+    .blockquote:after,
+    .blockquote:before {
+        width: 53px;
+        height: 41px;
+    }
+
+    .blockquote p {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .blockquote {
+        padding: 0px 80px;
+    }
+
+    .blockquote:after,
+    .blockquote:before {
+        width: 45px;
+        height: 35px;
+    }
+
+    .blockquote p {
+        font-size: 28px;
+    }
+}
+
+
+@media(max-width:767.8px) {
+    .about-gallery__item {
+        height: 300px;
+    }
+    .blockquote:after {
+        bottom: 40px;
+    }
+
+    .blockquote p {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .blockquote span {
+        font-size: 16px;
+    }
+
+    .about-hero__content h1 {
+        font-size: 36px;
+    }
+
+    .about-blockquote {
+        padding: 100px 0;
+    }
+
+    .about-hero>img {
+        object-position: 75% 0%;
+    }
+
+    .about-hero__content {
+        padding-left: 0;
+    }
+}
+
+@media(max-width:575.8px) {
+    .about-gallery__item {
+        width: 100%;
+        height: auto;
+    }
+
+    .blockquote:after,
+    .blockquote:before {
+        width: 25px;
+        height: 19px;
+    }
+
+    .blockquote {
+        padding: 0px 30px;
+    }
+
+    .about-blockquote {
+        padding: 70px 0;
+    }
+
+    .blockquote p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .about-hero__content h1 {
+        font-size: 28px;
+    }
+
+    .about-hero__content p {
+        font-size: 16px;
+    }
+}

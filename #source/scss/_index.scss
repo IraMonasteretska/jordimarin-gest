@@ -25,7 +25,6 @@
 .about {
     padding: 90px 0 130px;
     background-attachment: fixed;
-    background-position: center;
     background-size: cover;
 }
 
@@ -78,21 +77,22 @@
         align-items: center;
         justify-content: center;
         padding: 12px 164px;
-        color: #141414;
+        color: #fff;
         font-size: 18px;
         font-style: normal;
         font-weight: 600;
         line-height: 170%;
         text-transform: capitalize;
         border-radius: 5px;
-        background: #FFF;
+        background: transparent;
+        border: 1px solid #fff;
         transition: .3s;
 
         &:hover {
             transform: translateY(-6px);
             letter-spacing: 1px;
-            background: #141414;
-            color: #fff;
+            background: #fff;
+            color: #141414;
         }
     }
 }
@@ -149,7 +149,6 @@
 .contact {
     padding: 96px 0 186px;
     background-attachment: fixed;
-    background-position: center;
     background-size: cover;
 }
 
@@ -339,6 +338,11 @@
 }
 
 @media (max-width:767.8px) {
+    .contact {
+        height: 700px;
+        background-position: initial;
+        background-size: 100%;
+    }
     .contact__inner {
         width: 100%;
         margin: 0;
